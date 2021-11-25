@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Tips calculator</title>
+</head>
+<body>
+    <main class="container">
+        
+            <div class="card-container">
+                <div class="tip-container">
+                    <div class="tip-bill-container">
+                        <p class="tip-information">Bill</p>
+                        <input id="billInput" required class="input" type="text" placeholder="$0" value="">
+                    </div>
+                    <div class="tip-porcentage-container">
+                        <p class="tip-information">Select tip %</p>
+                        <button type="submit" id="button-tip-5"   value="5" class="button">5%</button>
+                        <button type="submit" id="button-tip-10"  class="button"  value="10">10%</button>
+                        <button type="submit" id="button-tip-15"  class="button"  value="15">15%</button>
+                        <button type="submit" id="button-tip-25"  class="button"  value="25">25%</button>
+                        <button type="submit" id="button-tip-50"  class="button"  value="50">50%</button>
+                        <button type="submit" id="button-tip"     class="custom-button">custom</button>
+                    </div>
+                    <div class="tip-people-container">
+                        <p class="tip-information">Number of people</p>
+                        <input id="people-number" value="" class="input" type="text" placeholder="0" required>
+                    </div>
+                </div>
+                <div class="result-container">
+                    <div class="tip-result-amount">
+                        <p>Tip Amount <br><span>/person</span></p>
+                        <p id="tip-amount-person" class="tip-amount">$0.00</p>
+                    </div>
+                    <div class="tip-result-amount">
+                        <p>Total<br><span>/person</span></p>
+                        <p id="tip-amount-total" class="tip-amount">$0.00</p>
+                    </div>
+                    <button onclick="resetPage()" class="reset-button">Reset</button>
+                </div>
+            </div>
+        
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
